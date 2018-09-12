@@ -29,7 +29,6 @@ public class BlackJack
                 stop = true;
                 System.out.println("You stop playing and it is the dealers turn now.");
             }
-
         }    
     }
 }
