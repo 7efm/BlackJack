@@ -20,8 +20,7 @@ public class Hand
     public int hit(){
         card2 = (int)(Math.random()*11)+1;
         this.total = total + card2;
-        System.out.println("You get a(n) " + card2);
-        System.out.println("Your total is: " + total);
+        System.out.println("The card is a(n) " + card2);
         return total;
     }
 
@@ -29,14 +28,23 @@ public class Hand
         return total;
     }
 
-    public void setTotal(int card2){
-        this.total = total + card2;
-    }
     public int setCard1(){
         this.card1 = (int)(Math.random()*11)+1;
         this.total = card1 + total;
-        System.out.println("Your first cards are ");
-        System.out.println(card1);
         return card1;
+    }
+
+    public int setCard2(){
+        this.card2 = (int)(Math.random()*11)+1;
+        this.total = card2 + total;
+        return card2;
+    }
+
+    public int getCard1(){
+        return card1;
+    }
+
+    public int getCard2(){
+        return card2;
     }
 }
