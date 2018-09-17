@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class BlackJack
 {
     public static void main(){
-        boolean stop = false;
+        boolean stop = false; 
         Hand player = new Hand(0,0,0);
         Hand dealer = new Hand(0,0,0);
 
